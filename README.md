@@ -33,8 +33,27 @@ V následující části probereme odpovědi na pět výzkumných otázek.
 ### Otázka 1: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
 Z dostupných údajů vyplývá, že se mzdy v roce 2018 oproti roku 2006 zvýšily ve všech odvětvích. Nejvyšší nárůst mezd mezi zmiňovanými roky byl zaznamenán v odvětví Informační a komunikační činnosti (nárůst o 20 934,75 CZK) a Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu (nárůst o 17 163,25 CZK). Při detailnějším zkoumání dat lze zjistit, že existují pouze tři odvětví, ve kterých mzdy rostly v každém sledovaném roce oproti roku předchozímu (nedošlo u nich v žádném ze sledovaných let k poklesu). Těmito odvětvími jsou: Zpracovatelský průmysl, Zdravotní a sociální péče a Ostatní činnosti. 
 
-![Snímek obrazovky 2025-11-26 190935](C:\Users\rauli\Documents\SQL_projekt\Snímek obrazovky 2025-11-26 190935.png)
+| industry_name | total_avg_payroll_change | avg_payroll_increase | avg_payroll_decrease | year_payroll_decrease |
+|---------------|-------------------------:|---------------------:|:--------------------:|:---------------------:|
+| Zdravotní a sociální péče | 14 821,75 | 14 821,75	| - | - |                 	                      
+| Zpracovatelský průmysl | 13 407,75 | 13 407,75 | - | - | 	                    	                      
+| Ostatní činnosti | 7 212,75 |	7 212,75 | - | - |	                    	                      
+
 U zbývajících 16 odvětví pak došlo k poklesu alespoň v jednom roce, přičemž „nejkritičtější“ byl z tohoto úhlu pohledu rok 2013, kdy byl pokles mezd zaznamenán hned u 11 odvětví. 
+
+| industry_name | total_avg_payroll_change | avg_payroll_increase | avg_payroll_decrease | year_payroll_decrease 
+|---------------|-------------------------:|---------------------:|--------------------:|:---------------------:|
+| Peněžnictví a pojišťovnictví | 14 856,25 | 19 340,25 | -4 484,00 | 2013 |           
+| Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu |	17 163,25	| 19 794,25 |	-2 631,00 | 2011, 2013, 2015 |    
+| Těžba a dobývání | 11 972,25 | 14 305,00 | -2 332,75 | 2009, 2013, 2014, 2016 |
+| Profesní, vědecké a technické činnosti	| 14 340,00	| 15 521,50	| -1 181,50	| 2010, 2013 |            
+| Informační a komunikační činnosti |	20 934,75 |	21 420,75 |	-486,00 |	2013 |                  
+| Činnosti v oblasti nemovitostí | 8 867,00	| 9 352,25 | -485,25	| 2009, 2013 |            
+| Stavebnictví | 10 316,25	| 10 786,75	| -470,50	| 2013 |                  
+| Kulturní, zábavní a rekreační činnosti |	11 571,50 |	11 869,25 |	-297,75 |	2013 |                  
+| Administrativní a podpůrné činnosti |	6 509,50 |	6 720,75 | -211,25	| 2013 |                  
+| Velkoobchod a maloobchod; opravy a údržba motorových vozidel |	11 752,75 |	11 946,75 |	-194,00 |	2013 |                  
+| Zásobování vodou; činnosti související s odpady a sanacemi |	9 984,75	| 10 086,50	| -101,75	| 2013 |               
 
 Vůbec nejčastěji pak došlo k poklesu mezd mezi jednotlivými roky v odvětví Těžba a dobývání (4x) a Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu (3x). Z hlediska hodnoty byl pak nejvýraznější pokles zaznamenán v roce 2013 v odvětví Peněžnictví a pojišťovnictví.
 
