@@ -14,7 +14,7 @@ Tabulku jsem se snažila vytvořit co nejjednodušší, aby měla co nejméně �
     + údaj o cenách za celou ČR je průměrem hodnot za jednotlivé kraje -> z tohoto důvodu bylo možné vzít do vytvářené finální tabulky pouze data za celou ČR (nebylo nutné vytvářet průměr z hodnot)
     + z dat je možné vysledovat klesající počet měření v jednotlivých letech, od roku 2011 se počet měření ustálil na 12 za rok za celou ČR pro každý produkt zvlášť (kromě položky *Kapr živý*, kde měření probíhala jen v prosinci -> od roku 2010 probíhalo vždy jedno měření za rok)
     + do roku 2014 včetně bylo předmětem měření 26 položek, od roku 2015 byla do měření přidána položka *Jakostní víno bílé*
-+ výsledná pomocná tabulka *price_aggregated* má s přihlédnutím k výše uvedeným skutečnostem 342 záznamů
++ výsledná pomocná tabulka *price_aggregated* má s přihlédnutím k výše uvedeným skutečnostem 342 záznamů (13 let * 26 kategorií + 4 roky * 1 kategorie)
 
 ***Tvorba podkladu payroll_aggregated***
 + výchozí tabulky: *czechia_payroll*, *czechia_payroll_calculation*, *czechia_payroll_industry_branch*, *czechia_payroll_unit*, *czechia_payroll_value_type*
@@ -28,6 +28,7 @@ Tabulku jsem se snažila vytvořit co nejjednodušší, aby měla co nejméně �
 + výsledná pomocná tabulka *payroll_aggregated* má se zohledněním výše uvedených skutečností a úprav 260 záznamů (13 let * 19 odvětví + 13 let * údaj ze celou ČR)
   
 ## Postup tvorby tabulky *t_petra_raulimova_project_SQL_secondary_final*
+Tvorba tabulky *t_petra_raulimova_project_SQL_secondary_final* byla méně náročná, než tvorba tabulky z předchozího kroku. Šlo o jednoduché propojení tabulek *economies* a *countries* přes název státu ve sloupcích *country*. Vyfiltrování dat pouze za roky 2006 až 2018 a zároveň vyfiltrování dat jen za kontinent Evropa. 
 
 ## Výzkumné otázky a odpovědi
 V následující části probereme odpovědi na pět výzkumných otázek.
