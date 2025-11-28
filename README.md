@@ -16,19 +16,17 @@ Tabulku jsem se snažila vytvořit co nejjednodušší, aby měla co nejméně �
     + do roku 2014 včetně bylo předmětem měření 26 položek, od roku 2015 byla do měření přidána položka *Jakostní víno bílé*
 + výsledná pomocná tabulka *price_aggregated* má s přihlédnutím k výše uvedeným skutečnostem 342 záznamů
 
-
-
 ***Tvorba podkladu payroll_aggregated***
 + výchozí tabulky: *czechia_payroll*, *czechia_payroll_calculation*, *czechia_payroll_industry_branch*, *czechia_payroll_unit*, *czechia_payroll_value_type*
-+ s tabulkou czechia_unit jsem nepracovala, jelikož se její popis v databázi lišil od popisu na stránkách gov.
-+ data jsem očistila o údaje, které se týkaly počtu zaměstnanců
-+ počítám pro přepočtený počet zaměstnanců
-+ v tabulce jsou ponechány údaje nejen pro jednotlivá odvětví, ale i údaj za celou ČR, jelikož průměrná mzda za celou ČR bez ohledu na odvětví neodpovídá průměru mezd za jednotlivá odvětví
-+ data očištěna na roky 2008 a 2016
-+ počet měření v každém roce 4 měření / odvětví
-+ počet odvětví 19 + 1 údaj bez odvětví za celou ČR
-+ výsledná pomocná tabulka má 260 řádků
-
++ s tabulkou *czechia_payroll_unit* jsem nepracovala, jelikož se její popis v databázi lišil od popisu na stránkách *csu.gov.cz*
++ analýza *czechia_payroll*
+    + tabulka obsahuje údaje od roku 2000 do roku 2021 -> pro další analýzu bylo však nezbytné omezit data pouze na období 2006-2018
+    + data jsem očistila o údaje, které se týkaly průměrného počtu zaměstnaných osob -> tyto údaje nebyly pro další výpočty použitelné (v mnoha případech zcela chyběly hodnoty)
+    + ve sloupci *calculation_code* jsem ze dvou možností vybrala kód 200 -> analýza je tudíž prováděna na průměrných mzdách pro přepočtený počet zaměstnanců (tento údaj mi přijde přesnější, jelikož zohledňuje zkrácené úvazky a pracovní dohody)
+    + na základě dat lze říci, že v každém roce proběhla pro každé odvětví 4 měření + 4 měření pro celou ČR -> při 19 odvětvích a jednom údaji za celou ČR lze tedy dopočítat, že celkem proběhlo 80 měření za rok
+    + při analýze údajů o mzdách jsem zjistila, že ve výsledné tabulce musím ponechat nejen údaje za jednotlivá odvětví, ale i údaj za celou ČR, jelikož průměrná mzda za celou ČR neodpovídá průměru mezd za jednotlivá odvětví
++ výsledná pomocná tabulka *payroll_aggregated* má se zohledněním výše uvedených skutečností a úprav 260 záznamů (13 let * 19 odvětví + 13 let * údaj ze celou ČR)
+  
 ## Postup tvorby tabulky *t_petra_raulimova_project_SQL_secondary_final*
 
 ## Výzkumné otázky a odpovědi
