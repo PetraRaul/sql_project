@@ -76,6 +76,7 @@ Vůbec nejčastěji pak došlo k poklesu mezd mezi jednotlivými roky v odvětv�
 ![Price_and_payroll_difference.jpg](https://github.com/PetraRaul/sql_project/blob/main/Price_and_payroll_difference.jpg)
 
 ### Otázka 5: Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve stejném nebo následujícím roce výraznějším růstem?
+[Odpověď - datový podklad:](https://github.com/PetraRaul/sql_project/blob/main/SQL_question_5.sql) Největší nárůst GDP lze sledovat v letech 2007, 2015 a 2017. Mzdy v daných rocích vzrostly, ale ještě výrazněji vzrostly mzdy v letech následujících (2008, 2016 a 2018), ač se GDP v těchto následujících letech snížilo. Lze si také všimnout, že vysoký nárůst GDP v roce 2007 měl pozitivní dopad na mzdy ještě v roce 2009, kdy GDP výrazně pokleslo oproti roku 2008, ale mzdy i nadále zaznamenaly nárůst (mírnější, než v letech předchozích). U cena se na základě dat domnívám, že vývoj GDP nemá na vývoj cen vliv. V letech, kdy GDP 
 
 
 
