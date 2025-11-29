@@ -21,6 +21,9 @@ price_comparison AS(
 	LEFT JOIN 
 		t_petra_raulimova_project_SQL_primary_final AS prim2
 		ON prim1."year"=prim2."year"+1
+	WHERE
+		prim1.category_name <> 'Jakostní víno bílé'
+		AND prim2.category_name <> 'Jakostní víno bílé'
 	GROUP BY 
 		prim1."year"
 	ORDER BY 
