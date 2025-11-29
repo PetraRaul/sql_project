@@ -18,7 +18,7 @@ Tabulku jsem se snažila vytvořit co nejjednodušší, aby měla co nejméně �
 
 ***Tvorba podkladu payroll_aggregated***
 + výchozí tabulky: *czechia_payroll*, *czechia_payroll_calculation*, *czechia_payroll_industry_branch*, *czechia_payroll_unit*, *czechia_payroll_value_type*
-+ s tabulkou *czechia_payroll_unit* jsem nepracovala, jelikož se její popis v databázi lišil od popisu na stránkách *csu.gov.cz*
++ s tabulkou *[czechia_payroll_unit](https://github.com/PetraRaul/sql_project/blob/main/payroll_units.jpg)* jsem nepracovala, jelikož se její popis v databázi lišil od popisu na stránkách *csu.gov.cz*
 + analýza *czechia_payroll*
     + tabulka obsahuje údaje od roku 2000 do roku 2021 -> pro další analýzu bylo však nezbytné omezit data pouze na období 2006-2018
     + data jsem očistila o údaje, které se týkaly průměrného počtu zaměstnaných osob -> tyto údaje nebyly pro další výpočty použitelné (v mnoha případech zcela chyběly hodnoty)
