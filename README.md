@@ -34,7 +34,7 @@ Tvorba tabulky *t_petra_raulimova_project_SQL_secondary_final* byla méně náro
 V následující části probereme odpovědi na pět výzkumných otázek.
 
 ### Otázka 1: Rostou v průběhu let mzdy ve všech odvětvích, nebo v některých klesají?
-Z dostupných údajů vyplývá, že se mzdy v roce 2018 oproti roku 2006 zvýšily ve všech odvětvích. Nejvyšší nárůst mezd mezi zmiňovanými roky byl zaznamenán v odvětví Informační a komunikační činnosti (nárůst o 20 934,75 CZK) a Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu (nárůst o 17 163,25 CZK). Při detailnějším zkoumání dat lze zjistit, že existují pouze tři odvětví, ve kterých mzdy rostly v každém sledovaném roce oproti roku předchozímu (nedošlo u nich v žádném ze sledovaných let k poklesu). Těmito odvětvími jsou: Zpracovatelský průmysl, Zdravotní a sociální péče a Ostatní činnosti. 
+[Odpověď na otázku č. 1:](https://github.com/PetraRaul/sql_project/blob/main/SQL_question_1.sql) Z dostupných údajů vyplývá, že se mzdy v roce 2018 oproti roku 2006 zvýšily ve všech odvětvích. Nejvyšší nárůst mezd mezi zmiňovanými roky byl zaznamenán v odvětví Informační a komunikační činnosti (nárůst o 20 934,75 CZK) a Výroba a rozvod elektřiny, plynu, tepla a klimatiz. vzduchu (nárůst o 17 163,25 CZK). Při detailnějším zkoumání dat lze zjistit, že existují pouze tři odvětví, ve kterých mzdy rostly v každém sledovaném roce oproti roku předchozímu (nedošlo u nich v žádném ze sledovaných let k poklesu). Těmito odvětvími jsou: Zpracovatelský průmysl, Zdravotní a sociální péče a Ostatní činnosti. 
 
 | industry_name | total_avg_payroll_change | avg_payroll_increase | avg_payroll_decrease | year_payroll_decrease |
 |---------------|-------------------------:|---------------------:|:--------------------:|:---------------------:|
