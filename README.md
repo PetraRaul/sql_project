@@ -10,7 +10,7 @@ Tabulku jsem se snažila vytvořit co nejjednodušší, aby měla co nejméně �
 + analýza *czechia_price*
     + tabulka obsahuje údaje od roku 2006 do roku 2018
     + roky z údajů ve sloupcích *date_from* a *date_to* jsem porovnala, abych zjistila, že není začátek měření v jednom roce a konec v jiném roce -> jelikož se potvrdil předpoklad, že každé jedno měření začíná a končí ve stejném roce, pracovala jsem dále již jen se sloupcem *date_to*
-    + v rámci každého měření je v tabulce ke každé kategorii k dispozici 15 záznamů -> jeden záznam za každý ze 14 krajů a jeden záznam za celou ČR (záznam za celou ČR se nachází vždy na řádku, ve kterém je ve sloupci region_code hodnota NULL)
+    + v rámci každého měření je v tabulce ke každé kategorii k dispozici 15 záznamů -> jeden záznam za každý ze 14 krajů a jeden záznam za celou ČR (záznam za celou ČR se nachází vždy na řádku, ve kterém je ve sloupci *region_code* hodnota NULL)
     + údaj o cenách za celou ČR je průměrem hodnot za jednotlivé kraje -> z tohoto důvodu bylo možné vzít do vytvářené finální tabulky pouze data za celou ČR (nebylo nutné vytvářet průměr z hodnot)
     + z dat je možné vysledovat klesající počet měření v jednotlivých letech, od roku 2011 se počet měření ustálil na 12 za rok za celou ČR pro každý produkt zvlášť (kromě položky *Kapr živý*, kde měření probíhala jen v prosinci -> od roku 2010 probíhalo vždy jedno měření za rok)
     + do roku 2014 včetně bylo předmětem měření 26 položek, od roku 2015 byla do měření přidána položka *Jakostní víno bílé*
@@ -28,7 +28,7 @@ Tabulku jsem se snažila vytvořit co nejjednodušší, aby měla co nejméně �
 + výsledná pomocná tabulka *payroll_aggregated* má se zohledněním výše uvedených skutečností a úprav 260 záznamů (13 let * 19 odvětví + 13 let * údaj ze celou ČR)
   
 ## Postup tvorby tabulky *t_petra_raulimova_project_SQL_secondary_final*
-Tvorba tabulky *t_petra_raulimova_project_SQL_secondary_final* byla méně náročná, než tvorba tabulky z předchozího kroku. Šlo o jednoduché propojení tabulek *economies* a *countries* přes název státu ve sloupcích *country*. Vyfiltrování dat pouze za roky 2006 až 2018 a zároveň vyfiltrování dat jen za kontinent Evropa. 
+Tvorba tabulky *t_petra_raulimova_project_SQL_secondary_final* byla méně náročná, než tvorba tabulky z předchozího kroku. Šlo o jednoduché propojení tabulek *economies* a *countries* přes název státu ve sloupcích *country*, vyfiltrování dat pouze za roky 2006 až 2018 a zároveň vyfiltrování dat jen za kontinent Evropa. 
 
 ## Výzkumné otázky a odpovědi
 V následující části probereme odpovědi na pět výzkumných otázek.
